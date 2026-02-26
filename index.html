@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanji Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🈳 Kanji Analyzer</h1>
+    <p class="subtitle">Upload an image containing Kanji to get a full breakdown</p>
+
+    <!-- Upload Area -->
+    <div class="upload-box" id="uploadBox">
+      <input type="file" id="imageInput" accept="image/*" capture="environment" hidden />
+      <button class="upload-btn" onclick="document.getElementById('imageInput').click()">
+        📷 Upload Image or Take Photo
+      </button>
+      <p id="fileName">No file selected</p>
+    </div>
+
+    <!-- Image Preview -->
+    <div id="previewContainer" class="hidden">
+      <img id="previewImage" src="" alt="Uploaded preview" />
+    </div>
+
+    <!-- Analyze Button -->
+    <button class="analyze-btn hidden" id="analyzeBtn" onclick="analyzeKanji()">
+      🔍 Analyze Kanji
+    </button>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="hidden">
+      <p>⏳ Analyzing... please wait</p>
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="hidden">
+      <h2>Results</h2>
+      <div id="resultContent"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Never upload this - it may contain sensitive info
+*.env
+
+# System files
+.DS_Store
+Thumbs.db

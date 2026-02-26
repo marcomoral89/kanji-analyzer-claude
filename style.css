@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f0eb;
+  color: #2c2c2c;
+  padding: 20px;
+}
+
+.container {
+  max-width: 640px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #c0392b;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 28px;
+  font-size: 0.95rem;
+}
+
+.upload-box {
+  border: 2px dashed #c0392b;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.upload-btn {
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.upload-btn:hover { background: #a93226; }
+
+#fileName {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+#previewContainer {
+  text-align: center;
+  margin: 16px 0;
+}
+
+#previewImage {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  border: 2px solid #eee;
+}
+
+.analyze-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.analyze-btn:hover { background: #1a252f; }
+
+#loading {
+  text-align: center;
+  padding: 20px;
+  color: #c0392b;
+  font-size: 1rem;
+}
+
+#results { margin-top: 28px; }
+
+#results h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f0e0e0;
+  padding-bottom: 8px;
+  color: #c0392b;
+}
+
+/* Word Card */
+.word-card {
+  background: #fff4f4;
+  border: 2px solid #c0392b;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.word-card h2 {
+  font-size: 2.8rem;
+  color: #c0392b;
+  margin-bottom: 12px;
+  border: none;
+  padding: 0;
+}
+
+.word-card p {
+  margin: 6px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.word-card em {
+  color: #555;
+}
+
+/* Breakdown title */
+.breakdown-title {
+  font-size: 1rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  margin-top: 4px;
+}
+
+/* Kanji Card */
+.kanji-card {
+  background: #fdf6f6;
+  border-left: 4px solid #c0392b;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.kanji-top {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.kanji-info {
+  flex: 1;
+}
+
+.kanji-info h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2c2c2c;
+}
+
+.kanji-info p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Stroke Order GIF */
+.stroke-order {
+  text-align: center;
+  min-width: 120px;
+}
+
+.stroke-order img {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #e8d5d5;
+  border-radius: 8px;
+  background: white;
+  margin-top: 6px;
+}
+
+.stroke-unavailable {
+  font-size: 0.75rem;
+  color: #aaa;
+  width: 110px;
+  margin-top: 6px;
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.hidden { display: none; }
